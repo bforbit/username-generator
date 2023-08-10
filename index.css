@@ -1,0 +1,153 @@
+@font-face {
+   font-family: "thabit";
+   src: url("Thabit.ttf");
+}
+
+body {
+   margin: 13px;
+   font-family: 'thabit', Courier, monospace;
+   background-color: #FDF2E1;
+}
+
+.container {
+   display: grid;
+   height: 100vh;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr 0.4fr 1fr 2fr;
+   grid-template-areas: "main main"
+   "title radio-char"
+   "mid-blank radio-char"
+   "generate-display radio-second"
+   "bottom-blank bottom-blank";
+}
+
+main {
+   grid-area: main;
+}
+
+.title, .radio-second, .generate-display {
+   padding: 15px;
+}
+
+.title {
+   grid-area: title;
+   border-bottom: 3px dotted #cbaacb;
+   font-size: 20px;
+}
+
+.title p {
+   font-family: 'Inter', sans-serif;
+}
+
+.radio-char {
+   grid-area: radio-char;
+   border-left: 3px dotted #cbaacb;
+   border-top: 3px dotted #cbaacb;
+   border-bottom: 3px dotted #cbaacb;
+   padding: 15px;
+}
+
+#radio-char-box {
+   background-color: FBE4F4;
+   text-align: center;
+   margin: 20px 15px 15px 15px;
+   padding: 10px;
+   border: 1px solid black;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.radio-second {
+   grid-area: radio-second;
+   border-bottom: 3px dotted #cbaacb;
+   border-left: 3px dotted #cbaacb;
+}
+
+#radio-second-box {
+   background-color: #FBFCD2;
+   text-align: center;
+   margin: 20px 30px 15px 30px;
+   padding: 15px;
+   border: 1px solid black;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#radio-second-box input {
+   height: 15px;
+   width: 15px;
+}
+
+.mid-blank {
+   grid-area: mid-blank;
+}
+
+.generate-display {
+   grid-area: generate-display;
+}
+
+#generate-display-boxes{
+   text-align: center;
+   padding: 10px;
+   margin-top: -30px;
+}
+
+button {
+   background-color: #E6FDDE;
+   padding: 15px;
+   margin-bottom: 15px;
+   font-size: 20px;
+   font-weight: bold;
+   letter-spacing: 2px;
+   border: 3px solid black;
+}
+
+#name-box {
+      background: #DEFBFD;
+      border: 1px dashed black;
+      text-align: center;
+      padding: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+      width: 400px;
+      height: 25px;
+      font-weight: bold;
+      font-size: 20px;
+}
+
+.bottom-blank {
+   grid-area: bottom-blank;
+}
+
+@media (max-width: 850px) {
+
+   body {
+      margin: 0;
+   }
+
+   .container {
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-areas: "main"
+      "title"
+      "radio-char"
+      "radio-second"
+      "generate-display" 
+      "bottom-blank";
+   }
+
+   .title {
+      border-bottom: none;
+   }
+
+   .radio-char {
+      border-left: none;
+   }
+
+   .radio-second {
+      border-left: none;
+   }
+
+   #generate-display-boxes {
+      margin-top: 15px;
+   }
+}

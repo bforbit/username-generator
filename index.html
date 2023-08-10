@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Custom Username Generator</title>
+   <link rel="stylesheet" href="index.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <div class="container">
+
+<main></main>
+
+<div class="title"><h1>Create a random username</h1>
+   <p>For when you've run out of ideas.</p>
+</div>
+
+<div class="radio-char">
+   <div id="radio-char-box">Add a certain amount of random characters to your name (optional)
+<p><div class="radio-group"><input type="radio" id="1" name="characterAmount" value="1"><label for="1">1</label>
+<br><input type="radio" id="2" name="characterAmount" value="2"><label for="2">2</label>
+<br><input type="radio" id="3" name="characterAmount" value="3"><label for="3">3</label>
+<br><input type="radio" id="4" name="characterAmount" value="4"><label for="4">4</label>
+<br><input type="radio" id="5" name="characterAmount" value="5"><label for="5">5</label></div></div></div>
+
+<div class="mid-blank"></div>
+
+<div class="radio-second">
+   <div id="radio-second-box">
+   <input type="radio" id="secondWord" name="secondWord" value="secondWord"><label for="secondWord">Click here if you would like a second word to your username (optional)</label></div>
+</div>
+
+<div class="generate-display">
+   <div id="generate-display-boxes">
+   <button onclick="buttonNewUsername()">GENERATE</button></p>
+   
+   <p id="name-box"></p>
+</div></div>
+
+<div class="bottom-blank"></div>
+   </div>
+
+<script src="nounlist.js"></script>
+<script src="index4-user-rand.js"></script>
+</body>
+</html>
