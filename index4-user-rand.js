@@ -91,3 +91,14 @@ function getSelectedCharacterLength() {
     }
 }
 
+function buttonClear() {
+    radioSecondWord.checked = false
+    button1.checked = false
+    button2.checked = false
+    button3.checked = false
+    button4.checked = false
+    button5.checked = false
+    passwordOne.textContent = ""
+    
+}
+
