@@ -165,7 +165,8 @@ main {
    }
     
     #radio-char-box {
-       margin: 30px;
+    margin: 30px;
+    position: relative;
     }
 
    .radio-second {
