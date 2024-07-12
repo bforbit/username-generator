@@ -12,8 +12,8 @@ body {
 .container {
    display: grid;
    height: 100vh;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr 0.4fr 1fr 2fr;
+   grid-template-columns: 1fr 1.3fr;
+   grid-template-rows: 1fr 1fr 0.5fr 1fr 1fr;
    grid-template-areas: "main main"
    "title radio-char"
    "mid-blank radio-char"
@@ -49,21 +49,16 @@ main {
 }
 
 #radio-char-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: FBE4F4;
+  background-color: #FBE4F4;
   text-align: center;
+  margin: 10px 30px;
   padding: 15px;
-  margin: 10px 30px 10px 30px;
   border: 1px solid black;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .radio-group {
-  display: inline-block;
+  display: inline-block; 
 }
 
 .radio-second {
@@ -138,6 +133,14 @@ main {
    grid-area: bottom-blank;
 }
 
+.bottom-blank a {
+    color: black;
+}
+
+.bottom-blank a:hover {
+    text-decoration: overline;
+}
+
 @media (max-width: 850px) {
 
    body {
@@ -178,6 +181,10 @@ main {
    }
     
     #name-box {
-        width: 50%;
+        width: 70%;
+    }
+    
+    .bottom-blank {
+        text-align: center;
     }
 }
